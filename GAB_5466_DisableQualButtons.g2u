@@ -1,0 +1,40 @@
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+	'Disable Disposition Buttons
+	'If user is in QAMGR Group Security the buttons will be enabled
+	'Hook: 28901
+	
+	V.Local.bGroup.Declare
+	
+	F.Global.Security.IsInGroup(V.Caller.User,"NCMRDIS",V.Caller.CompanyCode,V.Local.bGroup)
+	F.Intrinsic.Control.If(V.Local.bGroup,=,False)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000091,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000084,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000008,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000003,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000103,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000060,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000081,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000102,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000086,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000085,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000088,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000087,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000182,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000183,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000185,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000186,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000083,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000180,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000188,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000106,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000080,"LOCK",1)
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000056,"LOCK",1)
+	F.Intrinsic.Control.EndIf
+Program.Sub.Main.End
+
+Program.Sub.Comments.Start
+${$0$}$$}$$}$12:00:00 AM$}$False
+Program.Sub.Comments.End
