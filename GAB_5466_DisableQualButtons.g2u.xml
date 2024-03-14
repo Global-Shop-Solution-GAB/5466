@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyntaxEdit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pages>
+    <DefaultPage>
+      <Header />
+      <Footer />
+    </DefaultPage>
+  </Pages>
+  <DisplayStrings />
+  <Selection>
+    <Options>UseColors OverwriteBlocks SelectLineOnTripleClick CopyLineWhenEmpty SelectWordOnCtrlClick</Options>
+  </Selection>
+  <Gutter>
+    <Options>PaintLineNumbers PaintBookMarks PaintLineModificators</Options>
+  </Gutter>
+  <Margin>
+    <Visible>false</Visible>
+  </Margin>
+  <LineStyles />
+  <LineSeparator />
+  <Printing>
+    <Footer />
+    <Header />
+  </Printing>
+  <WhiteSpace />
+  <TextSource>
+    <Position>
+      <X>0</X>
+      <Y>37</Y>
+    </Position>
+    <Lexer>
+      <Scheme>
+        <Author>Quantum Whale, LLC.</Author>
+        <Copyright>Copyright (c) 2004 - 2014 Quantum Whale LLC.</Copyright>
+        <FileType>gas</FileType>
+        <Version>1.5</Version>
+        <Styles>
+          <Style>
+            <Name>idents</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>numbers</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>reswords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>comments</Name>
+            <ForeColor>Green</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>xmlcomments</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>symbols</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>whitespace</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>strings</Name>
+            <ForeColor>Maroon</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>directives</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>htmlparams</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>syntax errors</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>codes nippets</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>255:180:228:180</BackColor>
+          </Style>
+          <Style>
+            <Name>GabReservedWords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabTokenWithBrackets</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabFunctionIntrinsicDebug</Name>
+            <ForeColor>White</ForeColor>
+            <BackColor>Red</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>GabVariable</Name>
+            <ForeColor>Teal</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabVariableSystemDefined</Name>
+            <ForeColor>Teal</ForeColor>
+            <FontStyle>Bold Italic</FontStyle>
+          </Style>
+          <Style>
+            <Name>GabGui</Name>
+            <ForeColor>OrangeRed</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabProgramSubStartEnd</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>LightGray</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+        </Styles>
+      </Scheme>
+    </Lexer>
+    <TextStrings>
+      <Lines>
+        <string>Program.Sub.Preflight.Start</string>
+        <string>Program.Sub.Preflight.End</string>
+        <string />
+        <string>Program.Sub.Main.Start</string>
+        <string>	'Disable Disposition Buttons</string>
+        <string>	'If user is in QAMGR Group Security the buttons will be enabled</string>
+        <string>	'Hook: 28901</string>
+        <string>	</string>
+        <string>	V.Local.bGroup.Declare</string>
+        <string>	</string>
+        <string>	F.Global.Security.IsInGroup(V.Caller.User,"NCMRDIS",V.Caller.CompanyCode,V.Local.bGroup)</string>
+        <string>	F.Intrinsic.Control.If(V.Local.bGroup,=,False)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000091,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000084,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000008,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000003,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000103,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000060,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000081,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000102,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000086,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000085,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000088,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000087,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000182,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000183,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000185,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000186,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000083,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000180,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000188,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000106,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000080,"LOCK",1)</string>
+        <string>		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000056,"LOCK",1)</string>
+        <string>	F.Intrinsic.Control.EndIf</string>
+        <string>Program.Sub.Main.End</string>
+        <string />
+        <string>Program.Sub.Comments.Start</string>
+        <string>${$0$}$$}$$}$12:00:00 AM$}$False</string>
+        <string>Program.Sub.Comments.End</string>
+      </Lines>
+    </TextStrings>
+  </TextSource>
+  <Scrolling />
+  <Outlining>
+    <AllowOutlining>true</AllowOutlining>
+    <ImageSize>8</ImageSize>
+    <Ranges>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>0</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>1</Y>
+        </EndPoint>
+        <Text>Program.Sub.Preflight</Text>
+        <DisplayText>Program.Sub.Preflight</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>3</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>39</Y>
+        </EndPoint>
+        <Text>Program.Sub.Main</Text>
+        <DisplayText>Program.Sub.Main</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+    </Ranges>
+  </Outlining>
+  <HyperText />
+  <Spelling />
+  <Braces />
+</SyntaxEdit>
